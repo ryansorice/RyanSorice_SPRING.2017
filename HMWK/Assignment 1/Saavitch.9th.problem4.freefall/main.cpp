@@ -25,7 +25,7 @@ const float GRAVITY=32.174;
 int main(int argc, char** argv) {
     
     float time; //times as input in seconds
-    float disFell; //Distance in free fall
+    float disPell; //Distance in free fall
     int places; //Places to round the answer
     
     //input values
@@ -36,14 +36,14 @@ int main(int argc, char** argv) {
     cin>>places;
     
     //Process values; map inputs to outputs
-    disFell=GRAVITY*time*time/2;
+    disPell=GRAVITY*time*time/2;
     float shift=pow(10,places); //number of places to shift answer
-    int round=disFell*shift+0.5;
-    disFell=round/shift;
+    int round=disPell*shift+0.5;
+    disPell=round/shift;
     //Display output
     cout<<"Gravity "<<GRAVITY<< " ft/sec^2"<<endl;
     cout<<"Time fallen "<<time<< " seconds"<<endl;
-    cout<<"Distance traveled "<<disFell<<" ft"<<endl;
+    cout<<"Distance traveled "<<disPell<<" ft"<<endl;
     
     //Exit program
     return 0;

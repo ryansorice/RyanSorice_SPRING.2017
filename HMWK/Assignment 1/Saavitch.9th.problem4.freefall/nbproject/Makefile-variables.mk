@@ -7,13 +7,13 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=Cygwin-Windows
-CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
+CND_PLATFORM_Debug=Cygwin_1-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
 CND_ARTIFACT_NAME_Debug=saavitch.9th.problem4.freefall
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/saavitch.9th.problem4.freefall
-CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/saavitch.9th.problem4.freefall
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
 CND_PACKAGE_NAME_Debug=saavitch.9th.problem4.freefall.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/saavitch.9th.problem4.freefall.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/saavitch.9th.problem4.freefall.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
