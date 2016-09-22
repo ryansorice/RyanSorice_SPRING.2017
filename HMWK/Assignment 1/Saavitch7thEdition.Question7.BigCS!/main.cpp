@@ -7,10 +7,9 @@
  */
 
 //System Libraries
-#include <cstdlib>
-#include <iostream>
+#include <iostream> //Input/Output objects
 
-using namespace std;
+using namespace std; //namespace used in system libraries
 
 //Execution begins here
 int main(int argc, char** argv) {
@@ -25,9 +24,9 @@ int main(int argc, char** argv) {
     
     //Displays output for user, asking for two inputs
     cout<<"What character would you like to use for C?"<<endl;
-    cin>>b;
+    cin>>b; //Input character for big C
     cout<<"What character would you like to use for S"<<endl;
-    cin>>c;
+    cin>>c; //Input character for big S
     
     //Display of inputs and previously defined variables
     cout<<"* * * * * * * * * * * *"<<endl;
