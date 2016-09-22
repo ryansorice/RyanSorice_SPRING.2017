@@ -1,6 +1,8 @@
 /* 
- * Author:Ryan Sorice
- * Created on 15 September 2016
+ * Author: Ryan Sorice
+ * 
+ * Created on 9 September 2016
+ * 
  * Purpose: Write a C++ program that reads in two integers and then outputs
  *          both their sum and their product.
  * 

@@ -1,9 +1,11 @@
 /* 
  * Author: Ryan Sorice
- * Created on 15 September 2016
+ * 
+ * Created on 11 September 2016
+ * 
  * Purpose: Write a program that prints out C S ! in large block letters inside
-   a border of *s followed by two blank lines then the message Computer Science 
-   is Cool Stuff.
+ *          a border of *s followed by two blank lines then the message Computer Science 
+ *          is Cool Stuff.
  */
 
 //System Libraries

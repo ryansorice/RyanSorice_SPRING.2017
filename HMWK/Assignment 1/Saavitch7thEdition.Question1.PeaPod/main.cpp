@@ -1,7 +1,7 @@
 /* 
  * Author: Ryan Sorice
  * 
- * Created on 19 September 2016
+ * Created on 7 September 2016
  * Purpose: Enter the C++ program shown in Display 1.8. Compile and run the
  *          program. If the compiler gives an error message, correct the program
  *          and recompile the program. 

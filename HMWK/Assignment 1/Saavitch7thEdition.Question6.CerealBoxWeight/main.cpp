@@ -1,6 +1,6 @@
 /* Author: Ryan Sorice
  *
- * Created on 15 September 2016
+ * Created on 11 September 2016
  * 
  * Purpose: Write a program that will read the weight of a package of breakfast 
  *          cereal in ounces and output the weight in metric tons, given a ton is 

@@ -1,6 +1,7 @@
-/* File: main.cpp
+/* 
  * Author: Ryan Sorice
- * Created on 19 September 2016
+ * 
+ * Created on 14 September 2016
  * 
  * Purpose: Write a program that allows the user to enter a time in seconds and
  *          then outputs how far an object, that starts at rest, would drop if it 
@@ -10,7 +11,6 @@
 //System Libraries
 #include <iostream> //Input/Output objects
 #include <iomanip> //Formatting
-#include <cmath> //Math library for rounding decimals
 
 using namespace std; //namespace in system library being used
 

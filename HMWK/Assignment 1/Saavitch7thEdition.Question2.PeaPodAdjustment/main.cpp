@@ -1,7 +1,7 @@
 /* 
  * Author: Ryan Sorice
  *
- * Created on 15 September 2016
+ * Created on 7 September 2016
  * 
  * Purpose: Modify the previous C++ program (PeaPods), so that it first displays
  *          the word Hello and at the end displays the word Goodbye. Additionally,
