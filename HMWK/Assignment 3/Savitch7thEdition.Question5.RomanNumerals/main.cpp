@@ -4,7 +4,7 @@
  *
  * Created on 4 October 2016 11:47 AM
  * 
- * Purpose: Convert a year(1000-3000) to Roman numerals
+ * Purpose: Convert a year(0-3999) to Roman numerals
  */
 
 //System libraries
