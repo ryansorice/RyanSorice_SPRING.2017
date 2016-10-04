@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=saavitch7thedition.question1.rockpaperscissors
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/saavitch7thedition.question1.rockpaperscissors
+CND_ARTIFACT_NAME_Debug=savitch7thedition.question2.horoscopes
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/savitch7thedition.question2.horoscopes
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=saavitch7thedition.question1.rockpaperscissors.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/saavitch7thedition.question1.rockpaperscissors.tar
+CND_PACKAGE_NAME_Debug=savitch7thedition.question2.horoscopes.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/savitch7thedition.question2.horoscopes.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=saavitch7thedition.question1.rockpaperscissors
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/saavitch7thedition.question1.rockpaperscissors
+CND_ARTIFACT_NAME_Release=savitch7thedition.question2.horoscopes
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/savitch7thedition.question2.horoscopes
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=saavitch7thedition.question1.rockpaperscissors.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/saavitch7thedition.question1.rockpaperscissors.tar
+CND_PACKAGE_NAME_Release=savitch7thedition.question2.horoscopes.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/savitch7thedition.question2.horoscopes.tar
 #
 # include compiler specific variables
 #

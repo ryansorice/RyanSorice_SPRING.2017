@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/saavitch7thedition.question2.horoscopes
-OUTPUT_BASENAME=saavitch7thedition.question2.horoscopes
-PACKAGE_TOP_DIR=saavitch7thedition.question2.horoscopes/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savitch7thedition.question4.revolvingcreditaccount
+OUTPUT_BASENAME=savitch7thedition.question4.revolvingcreditaccount
+PACKAGE_TOP_DIR=savitch7thedition.question4.revolvingcreditaccount/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/saavitch7thedition.question2.horoscopes/bin"
+makeDirectory "${NBTMPDIR}/savitch7thedition.question4.revolvingcreditaccount/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/saavitch7thedition.question2.horoscopes.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch7thedition.question4.revolvingcreditaccount.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/saavitch7thedition.question2.horoscopes.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch7thedition.question4.revolvingcreditaccount.tar *
 checkReturnCode
 
 # Cleanup
