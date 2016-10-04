@@ -87,6 +87,11 @@ int main(int argc, char** argv) {
             cout<<"Scissors cut Paper.\n";
             score1++; //Adds 1 point to player 1 score
         }
+        //Final if statement
+        else if (play1!=play2)
+        { 
+            cout<<"It is a draw!\n";
+        }
         //Output if user would like to continue or end program
         cout<<"Would you like to play again? Enter 'Y' or 'N'\n";
         cin>>yesno;
