@@ -30,8 +30,6 @@ int main(int argc, char** argv) {
     
     while(n<=100)
     {
-        int c=1;
-        while(c<=n){
         fact=fact*n;
         power=pow(x,n);
         e=power/fact;
