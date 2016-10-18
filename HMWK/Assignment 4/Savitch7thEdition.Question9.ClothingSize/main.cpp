@@ -24,6 +24,7 @@ int main(int argc, char** argv) {
           ageRem2; //Remainder of age > 39
     
     //Initial output; Variable initiation
+    cout<<"This program will computer your clothing size!\n";
     cout<<"What is your height in inches?\n";
     cin>>height;
     cout<<"What is your weight in pounds?\n";

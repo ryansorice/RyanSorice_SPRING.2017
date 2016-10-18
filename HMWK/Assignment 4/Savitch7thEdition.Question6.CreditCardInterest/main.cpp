@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
           
     
     //Initial output; Variable initiation
+    cout<<"This program calculates the interest due on your credit balance!\n";
     cout<<"What is your current credit balance owed?\n";
     cin>>credBal;
     cout<<"What is the interest rate on your credit balance?\n";

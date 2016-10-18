@@ -21,6 +21,9 @@ int main(int argc, char** argv) {
             teens1; //Secondary Ten-Nineteen string
     short n=99; //Counter for loop
     
+    //Initial output
+    cout<<"Welcome to the song, 99 Bottle of Beer on the Wall!\n"<<endl;
+    
     //Loop to output each phrase of 99 bottles (99->0)
     while(n>0){
         switch(n/10){ //First switch

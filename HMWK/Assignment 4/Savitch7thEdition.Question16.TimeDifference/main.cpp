@@ -25,6 +25,7 @@ int main(int argc, char** argv) {
         totMin;
     
     //Initial outputs; Variables initiated
+    cout<<"This program calculates the difference, in minutes, between two set times!\n";
     cout<<"What is the hour of your initial time?\n";
     cin>>hrs;
     cout<<"What is the minute of your initial time?\n";

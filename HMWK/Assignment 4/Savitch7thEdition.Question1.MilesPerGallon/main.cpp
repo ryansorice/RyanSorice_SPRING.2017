@@ -23,10 +23,13 @@ int main(int argc, char** argv) {
           car1, //Car 1 mpg
           car2; //Car 2 mpg
     
+    //Initial output
+    cout<<"This program calculates how fuel efficient your vehicles are!\n";
+    
     //Loop to repeat calculation while user says yes
     //'y' 'Y' true, else false
     while(yesno=='y'||yesno=='Y'){
-        //Initial output; Initiation of variables
+        //Output; Initiation of variables
         cout<<"How many liters of gasoline is the first car consuming?\n";
         cin>>gasLitr;
         cout<<"How many miles is this car traveling?\n";
