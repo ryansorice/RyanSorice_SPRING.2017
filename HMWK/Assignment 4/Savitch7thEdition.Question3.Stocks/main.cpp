@@ -1,15 +1,11 @@
 /* File: main
- * 
  * Author: Ryan Sorice
- *
  * Created on 10 October 2016 8:51 AM
- * 
  * Purpose: Write a program that computes the value of stock to the nearest
- *          eighth of a number.
- */
+ *          eighth of a number.                                             */
 
 //System libraries
-#include <iostream>
+#include <iostream> //Inputs and outputs
 
 using namespace std; //Namespace in system libraries
 
@@ -26,11 +22,13 @@ int main(int argc, char** argv) {
           wDollar; //Whole number of individual share value 
     char yesno='y'; //Variable for loop true/false
     
-    //Loop to allow user to run program til user enters false
-    while(yesno=='y'||yesno=='Y')
-    {
+    //Initial output
+    cout<<"This program will compute the current value of your stock!\n";
     
-        //Initial output to user; Initialize variables
+    //Loop to allow user to run program til user enters false
+    //'y' 'Y' true, else false
+    while(yesno=='y'||yesno=='Y'){
+        //Output to user; Initialize variables
         cout<<"How many shares of stock do you own?\n";
         cin>>shares;
         cout<<"What is the whole dollar portion of the price of the shares?\n";
@@ -43,23 +41,20 @@ int main(int argc, char** argv) {
 
         //Processing values
         whole=wDollar*shares;
-        nfrac=(nmrtr*shares)/dnmntr; //Fraction portion added to the whole
+        nfrac=(nmrtr*shares)/dnmntr; //Fraction portion that gets added to the whole
         rmndr=(nmrtr*shares)%dnmntr; //Remainder of fraction portion
 
         //If statement if no remainder
-        if(rmndr==0)
-        {
+        if(rmndr==0){
             //Output value of stock without remainder
             cout<<"The value of your stock is $"<<whole+nfrac<<endl;
         }
         //Else if there is a remainder
-        else
-        {  
+        else{  
             //Output value of stock with remainder
             cout<<"The value of your stock is $"<<whole+nfrac<<" "<<rmndr<<"/"<<dnmntr<<endl;
         }
-        
-        //Output to user; initiates loop again or ends loop
+        //Output to user; initiates loop again or break
         cout<<"Do you have more shares? Enter 'Y'-Yes 'N'-No\n";
         cin>>yesno;
     }
