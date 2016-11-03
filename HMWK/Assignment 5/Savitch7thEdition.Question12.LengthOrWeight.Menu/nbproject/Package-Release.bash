@@ -7,15 +7,15 @@
 # Macros
 TOP=`pwd`
 CND_PLATFORM=Cygwin-Windows
-CND_CONF=Debug
+CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savitch7thedition.question7.romannumerals
-OUTPUT_BASENAME=savitch7thedition.question7.romannumerals
-PACKAGE_TOP_DIR=savitch7thedition.question7.romannumerals/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savitch7thedition.question12.lengthorweight.menu
+OUTPUT_BASENAME=savitch7thedition.question12.lengthorweight.menu
+PACKAGE_TOP_DIR=savitch7thedition.question12.lengthorweight.menu/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/savitch7thedition.question7.romannumerals/bin"
+makeDirectory "${NBTMPDIR}/savitch7thedition.question12.lengthorweight.menu/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch7thedition.question7.romannumerals.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch7thedition.question12.lengthorweight.menu.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch7thedition.question7.romannumerals.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch7thedition.question12.lengthorweight.menu.tar *
 checkReturnCode
 
 # Cleanup
