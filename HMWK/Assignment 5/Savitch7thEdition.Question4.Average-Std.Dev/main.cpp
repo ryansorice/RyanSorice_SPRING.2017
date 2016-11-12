@@ -10,6 +10,8 @@
 
 using namespace std;                        //Name-space in system libraries
 
+//User Libraries
+
 //Global variables
 
 //Function prototypes
@@ -51,12 +53,26 @@ int main(int argc, char** argv) {
     //Exits program
     return 0;
 }
+//000000011111111112222222222333333333344444444445555555555666666666677777777778
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+//*************************   stdDev ******************************************
+//Purpose:  Compute standard deviation of 4 scores
+//Inputs:   scor1,scor2,scor3,scor4,average; floats for scores and their average
+//Output:   stdDev; float with processed value of standard deviation
+//******************************************************************************
 float stdDev(float scor1, float scor2, float scor3, float scor4, float average){
     float stanDev;                                  //Declare returned variable
     //Process function values to get standard deviation
     stanDev=sqrt((pow((scor1-average),2)+pow((scor2-average),2)+pow((scor3-average),2)+pow((scor4-average),2))/4);
     return stanDev;                                 //Returns standard deviation to function
 }
+//000000011111111112222222222333333333344444444445555555555666666666677777777778
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+//*************************   avgScr ******************************************
+//Purpose:  Computer average of 4 scores
+//Inputs:   scor1,scor2,scor3,scor4; floats for 4 different scores
+//Output:   avgScr; float of processed value of the average of the scores
+//******************************************************************************
 float avgScr(float scor1, float scor2, float scor3, float scor4){
     float average=(scor1+scor2+scor3+scor4)/4;      //Declare and process variable with function values
     return average;                                 //Returns average to function

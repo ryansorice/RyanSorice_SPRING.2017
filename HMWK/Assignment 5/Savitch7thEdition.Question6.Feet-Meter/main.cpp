@@ -20,8 +20,8 @@ float cnvFeet(float);           //Feet conversion function
 float cnvInch(float);           //Inch conversion function
 float cmOvrFl(float &);         //Cm overflow function
 float inOvrFl(float &);         //Inch overflow function
-void cnvFtMt();
-void cnvMtFt();
+void cnvFtMt();                 //Feet to Meter conversion function
+void cnvMtFt();                 //Meter to Feet conversion function
 
 //Execution begins here
 int main(int argc, char** argv) {
@@ -47,9 +47,10 @@ int main(int argc, char** argv) {
     //Exits program
     return 0;
 }
+//Meter to feet conv. function
 void cnvMtFt(){
     //Declaration/Initiation of variable
-    float extraF;
+    float extraF;                               //Overflow of feet
     char yesno='y';                             //Variable to continue or break loop
     
     while(yesno=='y'||yesno=='Y'){              //Loop to run meter-centimeter to feet-inch conversion
@@ -80,9 +81,10 @@ void cnvMtFt(){
         cin>>yesno;                             //User initializes or breaks loop
     }
 }
+//Feet to meter conv. function
 void cnvFtMt(){
     //Declaration/Initiation of variable
-    float extraM;
+    float extraM;                               //Overflow of meters
     char yesno='y';                             //Variable to continue or break loop
     
     while(yesno=='y'||yesno=='Y'){              //Loop to run feet-inch to meter-centimeter conversion
@@ -113,38 +115,41 @@ void cnvFtMt(){
         cin>>yesno;                             //User initializes or breaks loop
     }
 }
-float inOvrFl(float &inches){
-    static float extraF=0;
-    while(inches>=12){
-        inches-=12;
-        extraF+=1;
+//Inch overflow function
+float inOvrFl(float &inches){              
+    static float extraF=0;                 //Declare/initiate return variable
+    while(inches>=12){                     //Loop to get extra feet from inch overflow
+        inches-=12;                        //Subtract 12 from inches for every foot
+        extraF+=1;                         //Add 1 to extra feet for every 12 inches
     }
-    return extraF;
+    return extraF;                         //Return extra feet to function
 }
+//Cm overflow function
 float cmOvrFl(float &cMeters){
-    static float extraM=0;
-    while(cMeters>=100){
-        cMeters-=100;
-        extraM+=1;
+    static float extraM=0;                 //Declare/initiate return variable
+    while(cMeters>=100){                   //Loop to get extra meter from cm overflow
+        cMeters-=100;                      //Subtract 100 from cm for every meter
+        extraM+=1;                         //Add 1 to extra meters for every 100 cms
     }
-    return extraM;
+    return extraM;                         //Return extra meters to function
 }
+//Cm to inches conv.
 float cnvInch(float cMeters){
-    float inches=(cMeters*0.393701);
-    return inches;
+    float inches=(cMeters*0.393701);       //Declare/process return variable
+    return inches;                         //Return value of inches to function
 }
-
-float cnvFeet(float meters){
-    float feet=(meters*MTFTCNV);
-    return feet;
+//Meter to feet conv.
+float cnvFeet(float meters){    
+    float feet=(meters*MTFTCNV);           //Declare/process return variable
+    return feet;                           //Return value of feet to function
 }
-
+//Inch to cm conv.
 float cnvCmtr(float inches){
-    float cMeters=((FTMTCNV/12)*inches)*100;
-    return cMeters;
+    float cMeters=((FTMTCNV/12)*inches)*100;//Declare/process return variable
+    return cMeters;                         //Return value of cms to function
 }
-
+//Feet to meter conv.
 float cnvMtr(float feet){
-    float meters=feet*FTMTCNV;
-    return meters;
+    float meters=feet*FTMTCNV;             //Declare/process return variable
+    return meters;                         //Return value of meters to function
 }

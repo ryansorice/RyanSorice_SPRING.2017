@@ -47,9 +47,10 @@ int main(int argc, char** argv) {
     //Exits program
     return 0;
 }
+//Kilogram to pound conv. function
 void cnvKgPd(){
     //Declaration/Initiation of variable
-    float extraPd;
+    float extraPd;                              //Overflow of pounds
     char yesno='y';                             //Variable to continue or break loop
     
     while(yesno=='y'||yesno=='Y'){              //Loop to run kilogram-gram to pound-ounces conversion
@@ -80,10 +81,10 @@ void cnvKgPd(){
         cin>>yesno;                             //User initializes or breaks loop
     }
 }
-
+//Pound to kilogram conv. function
 void cnvPdKg(){
     //Declaration/Initiation of variable
-    float extraKg;
+    float extraKg;                              //Overflow of kilograms
     char yesno='y';                             //Variable to continue or break loop
     
     while(yesno=='y'||yesno=='Y'){              //Loop to run pound-ounces to kilogram-gram conversion
@@ -106,7 +107,6 @@ void cnvPdKg(){
             extraKg=gmOvrFl(grams);             //Gets additional kilograms from function; carries new gram value
             kilgram=kilgram+extraKg;            //Adds additional kilograms to total kilograms
         }
-
         //Final output
         cout<<"Your kilogram conversion      = "<<kilgram<<" kilograms\n";
         cout<<"Your grams conversion         = "<<grams<<" grams\n";
@@ -114,39 +114,41 @@ void cnvPdKg(){
         cin>>yesno;                             //User initializes or breaks loop
     }
 }
-
+//Ounce overflow function
 float ocOvrFl(float &ounces){
-    static float extraPd=0;
-    while(ounces>=16){
-        ounces-=16;
-        extraPd+=1;
+    static float extraPd=0;                 //Declare/initiate return variable             
+    while(ounces>=16){                      //Loop to get extra pounds from ounces overflow
+        ounces-=16;                         //Subtract 16 from ounces for every pound
+        extraPd+=1;                         //Add 1 to extra pounds every 16 ounces
     }
-    return extraPd;
+    return extraPd;                         //Return extra pounds value to function
 }
-float gmOvrFl(float &grams){
-    static float extraKg=0;
-    while(grams>=1000){
-        grams-=1000;
-        extraKg+=1;
+//Gram overflow function
+float gmOvrFl(float &grams){            
+    static float extraKg=0;                 //Declare/initiate return variable
+    while(grams>=1000){                     //Loop to get extra kilograms from gram overflow
+        grams-=1000;                        //Subtract 1000 from grams for every kilogram
+        extraKg+=1;                         //Add 1 to extra kilograms every 1000 grams
     }
-    return extraKg;
+        return extraKg;                     //Return extra kilograms value to function
 }
+//Grams to ounces conv.
 float cnvOunc(float grams){
-    float ounces=(grams*0.03527);
-    return ounces;
+    float ounces=(grams*0.03527);           //Declare/process return variable
+    return ounces;                          //Return value of ounces to function
 }
-
+//Kilograms to pounds conv.
 float cnvPnd(float kilgram){
-    float pounds=(kilgram*KGPDCNV);
-    return pounds;
+    float pounds=(kilgram*KGPDCNV);         //Declare/process return variable
+    return pounds;                          //Return value of pounds to function
 }
-
+//Ounces to grams conv.
 float cnvGram(float ounces){
-    float grams=((PDKGCNV/16)*ounces)*1000;
-    return grams;
+    float grams=((PDKGCNV/16)*ounces)*1000;//Declare/process return variable
+    return grams;                          //Return value of grams to function
 }
-
+//Pounds to kilogram conv.
 float cnvKigr(float pounds){
-    float kilgram=pounds*PDKGCNV;
-    return kilgram;
+    float kilgram=pounds*PDKGCNV;          //Declare/process return variable
+    return kilgram;                        //Return value of kilograms to function
 }

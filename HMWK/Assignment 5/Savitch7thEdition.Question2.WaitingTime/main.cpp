@@ -6,9 +6,11 @@
  */
 
 //System libraries
-#include <iostream>
+#include <iostream>                                         //Inputs and outputs
 
 using namespace std;                                        //Name-space in system libraries
+
+//User Libraries
 
 //Global variables
 
@@ -57,7 +59,15 @@ int main(int argc, char** argv) {
     //Exits program
     return 0;
 }
-
+//000000011111111112222222222333333333344444444445555555555666666666677777777778
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+//*************************   newTime ******************************************
+//Purpose:  Get new time after a waiting period is served; 12-hour notation
+//Inputs:   initHr,initMin,waitHr,waitMin; shorts for hrs and mins
+//          intAmpm; string for am/pm value
+//Output:   newTime; string with computed am/pm value
+//          inithr,initMin; shorts for new time
+//******************************************************************************
 string newTime(short &initHr, short &initMin, short waitHr, short waitMin, string intAmpm){
     string newAmpm;                                         //Returned string variable
     initMin+=waitMin;                                       //Adds minutes to be waited to initial minute

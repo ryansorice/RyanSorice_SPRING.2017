@@ -14,6 +14,8 @@
 
 using namespace std;                        //Name-space in system libraries
 
+//User libraries
+
 //Global variables
 
 //Function prototypes
@@ -100,11 +102,17 @@ int main(int argc, char** argv) {
     cout<<"of "<<(scor2/1000)*100.0f<<"%\n";
     cout<<"Player 3 won "<<scor3<<" times with a win-rate\n";
     cout<<"of "<<(scor3/1000)*100.0f<<"%\n";
-    
     //Exits program
     return 0;
 }
-
+//000000011111111112222222222333333333344444444445555555555666666666677777777778
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+//*************************   shoot ********************************************
+//Purpose:  3-way Gun Duel between players 1000 times
+//Inputs:   targAlv; bool to determine alive or dead
+//          accrcy; float to determine players accuracy
+//Output:   targAlv; bool true or false (dead or alive)
+//******************************************************************************
 void shoot(bool &targAlv,float accrcy){
     //Declare/Initiate variable
     float rndnmbr=(rand()%100+1)/100.0f;        //Gets random number between 0 and 1
