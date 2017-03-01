@@ -18,10 +18,10 @@
     <ClInclude Include="Warrior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Magician.h">
+    <ClInclude Include="Ninja.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cleric.h">
+    <ClInclude Include="Coin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,13 +29,13 @@
     <ClCompile Include="Warrior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Magician.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cleric.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ninja.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

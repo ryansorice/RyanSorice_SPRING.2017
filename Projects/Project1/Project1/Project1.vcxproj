@@ -110,13 +110,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Cleric.h" />
-    <ClInclude Include="Magician.h" />
+    <ClInclude Include="Ninja.h" />
+    <ClInclude Include="Coin.h" />
     <ClInclude Include="Warrior.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cleric.cpp" />
-    <ClCompile Include="Magician.cpp" />
+    <ClCompile Include="Ninja.cpp" />
+    <ClCompile Include="Coin.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Warrior.cpp" />
   </ItemGroup>

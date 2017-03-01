@@ -9,8 +9,8 @@ Purpose: Create classes for the beginning of a Dungeon-Style card game
 #include <string>
 
 //User Libraries
-#include "Cleric.h"
-#include "Magician.h"
+#include "Ninja.h"
+#include "Coin.h"
 #include "Warrior.h"
 
 using namespace std;	//Namespace in system libraries
@@ -21,6 +21,24 @@ using namespace std;	//Namespace in system libraries
 
 //Execution begins here
 int main() {
+
+	//Variables
+	Coin status = Coin();
+	Ninja hero = Ninja();
+
+	//Initial output
+	cout << "Welcome to the coin flip!\n";
+
+	//Run the game
+	while (hero.alive == true) {
+		status.flip;
+		cout << "The flip is done!\n";
+		if (status.flip == false) {
+			hero.alive = false;
+			cout << "Dead!\n";
+		}
+		else "You survived another round!\n";
+	}
 
 	//Exits program
 	return 0;
