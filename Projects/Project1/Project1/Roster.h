@@ -1,12 +1,11 @@
 #pragma once
 #include <string>
-class Coin
+class Roster
 {
 private:
 	std::string _name;
 public:
-	Coin();
-	~Coin();
-	bool flip();
+	Roster();
+	~Roster();
 };
 

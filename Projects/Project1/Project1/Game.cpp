@@ -1,44 +1,29 @@
 /*
 Author: Ryan Sorice
 Created on: 27 February 2017
-Purpose: Create classes for the beginning of a Dungeon-Style card game
+Purpose: Fill a team roster with players and coach.
 */
 
 //System Libraries
 #include <iostream>
 #include <string>
-
 //User Libraries
-#include "Ninja.h"
-#include "Coin.h"
-#include "Warrior.h"
+#include "Roster.h"
+#include "Coach.h"
+#include "Player.h"
 
-using namespace std;	//Namespace in system libraries
-
-//Global Variables
-
-//Function Prototypes
+using namespace std;
 
 //Execution begins here
 int main() {
 
 	//Variables
-	Coin status = Coin();
-	Ninja hero = Ninja();
-
-	//Initial output
-	cout << "Welcome to the coin flip!\n";
-
-	//Run the game
-	while (hero.alive == true) {
-		status.flip;
-		cout << "The flip is done!\n";
-		if (status.flip == false) {
-			hero.alive = false;
-			cout << "Dead!\n";
-		}
-		else "You survived another round!\n";
-	}
+	Coach coach = Coach();
+	Player player1 = Player();
+	Player player2 = Player();
+	Player player3 = Player();
+	Player player4 = Player();
+	Roster roster = Roster();
 
 	//Exits program
 	return 0;

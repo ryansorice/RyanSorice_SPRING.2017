@@ -110,15 +110,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Ninja.h" />
-    <ClInclude Include="Coin.h" />
-    <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Coach.h" />
+    <ClInclude Include="Roster.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ninja.cpp" />
-    <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Coach.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Warrior.cpp" />
+    <ClCompile Include="Roster.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,13 +1,7 @@
-﻿  Warrior.cpp
+﻿  Roster.cpp
   Game.cpp
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(33): error C3867: 'Ninja::alive': non-standard syntax; use '&' to create a pointer to member
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(33): warning C4805: '==': unsafe mix of type 'bool (__thiscall Ninja::* )(void)' and type 'bool' in operation
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(33): error C2446: '==': no conversion from 'int' to 'bool (__thiscall Ninja::* )(void)'
-  c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(33): note: There are no conversions from integral values to pointer-to-member values
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(33): error C2040: '==': 'bool (__thiscall Ninja::* )(void)' differs in levels of indirection from 'int'
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(34): error C3867: 'Coin::flip': non-standard syntax; use '&' to create a pointer to member
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(36): error C3867: 'Coin::flip': non-standard syntax; use '&' to create a pointer to member
-c:\users\ncc\documents\visual studio 2015\projects\project1\projects\project1\project1\game.cpp(37): error C2659: '=': function as left operand
-  Coin.cpp
-  Ninja.cpp
+  Coach.cpp
+  Player.cpp
   Generating Code...
+  Project1.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Projects\17ASpring\Projects\Project1\Debug\Project1.exe
+  Project1.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Projects\17ASpring\Projects\Project1\Debug\Project1.pdb (Partial PDB)

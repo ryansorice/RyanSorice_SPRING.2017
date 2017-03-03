@@ -1,11 +1,12 @@
 #pragma once
 #include <string>
-class Warrior
+
+class Player
 {
 private:
 	std::string _name;
 public:
-	Warrior();
-	~Warrior();
+	Player();
+	~Player();
 };
 

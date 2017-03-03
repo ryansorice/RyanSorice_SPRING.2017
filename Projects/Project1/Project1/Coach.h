@@ -1,13 +1,11 @@
 #pragma once
 #include <string>
-
-class Ninja
+class Coach
 {
 private:
 	std::string _name;
 public:
-	Ninja();
-	~Ninja();
-	bool alive();
+	Coach();
+	~Coach();
 };
 
