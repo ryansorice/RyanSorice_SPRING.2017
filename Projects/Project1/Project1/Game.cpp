@@ -18,12 +18,17 @@ using namespace std;
 int main() {
 
 	//Variables
+	string name;
 	Coach coach = Coach();
 	Player player1 = Player();
 	Player player2 = Player();
-	Player player3 = Player();
-	Player player4 = Player();
 	Roster roster = Roster();
+	cout << "Enter first player's name.\n";
+	cin >> name;
+	player1 = Player(name);
+	cout << "Enter first player's name.\n";
+	cin >> name;
+	player2 = Player(name);
 
 	//Exits program
 	return 0;

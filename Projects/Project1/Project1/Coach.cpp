@@ -1,6 +1,5 @@
 #include "Coach.h"
-#include <ctime>
-#include <cstdlib>
+#include <string>
 
 Coach::Coach()
 {
