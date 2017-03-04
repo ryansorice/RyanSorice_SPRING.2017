@@ -7,5 +7,6 @@ private:
 public:
 	Coach();
 	~Coach();
+	std::string getCoachName();
 };
 

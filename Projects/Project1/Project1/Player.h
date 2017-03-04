@@ -9,5 +9,6 @@ public:
 	Player();
 	Player(std::string name);
 	~Player();
+	std::string getName();
 };
 

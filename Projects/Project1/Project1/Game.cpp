@@ -11,6 +11,7 @@ Purpose: Fill a team roster with players and coach.
 #include "Roster.h"
 #include "Coach.h"
 #include "Player.h"
+#include "Team.h"
 
 using namespace std;
 
@@ -18,17 +19,30 @@ using namespace std;
 int main() {
 
 	//Variables
-	string name;
+	string name, description;
 	Coach coach = Coach();
-	Player player1 = Player();
-	Player player2 = Player();
 	Roster roster = Roster();
+	
+	cout << "What is your team's name?\n";
+	getline(cin, name);
+	cout << "What is your team's motto?\n";
+	getline(cin, description);
+	Team team = Team(name, description, coach);
+
+	cout << team.getTeamInfo() << endl;
+
 	cout << "Enter first player's name.\n";
 	cin >> name;
-	player1 = Player(name);
+	Player player1 = Player(name);
+
 	cout << "Enter first player's name.\n";
 	cin >> name;
-	player2 = Player(name);
+	Player player2 = Player(name);
+
+	roster.setPlayer(player1, 0);
+	roster.setPlayer(player2, 1);
+
+	cout << roster.getRoster()<<endl;
 
 	//Exits program
 	return 0;

@@ -3,11 +3,16 @@
 
 Coach::Coach()
 {
-	_name = "Coach";
+	_name = "Programmer 000";
 }
 
 
 Coach::~Coach()
 {
+}
+
+std::string Coach::getCoachName()
+{
+	return _name;
 }
 
