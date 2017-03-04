@@ -110,12 +110,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Coin.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Coach.h" />
     <ClInclude Include="Roster.h" />
     <ClInclude Include="Team.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Coin.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Coach.cpp" />
     <ClCompile Include="Game.cpp" />

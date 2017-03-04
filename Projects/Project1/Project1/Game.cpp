@@ -12,6 +12,7 @@ Purpose: Fill a team roster with players and coach.
 #include "Coach.h"
 #include "Player.h"
 #include "Team.h"
+#include "Coin.h"
 
 using namespace std;
 
@@ -22,6 +23,7 @@ int main() {
 	string name, description;
 	Coach coach = Coach();
 	Roster roster = Roster();
+	Coin coin;
 	
 	cout << "What is your team's name?\n";
 	getline(cin, name);
@@ -43,6 +45,32 @@ int main() {
 	roster.setPlayer(player2, 1);
 
 	cout << roster.getRoster()<<endl;
+
+	cout << "The players will now compete in coin tosses til they reach 5 points!\n";
+	while (player1.totalScore < 5 && player2.totalScore < 5) 
+	{
+		if (coin.winLose() == true)
+		{
+			cout << "HEADS!\n";
+			player1.totalScore += 1;
+		}
+		else
+		{
+			cout << "TAILS!\n";
+			player2.totalScore += 1;
+		}
+		
+		cout << player1.getName() << " " << player1.totalScore << " " << player2.getName() << " " << player2.totalScore << endl;
+		getchar();
+	}
+	
+	if (player1.totalScore > player2.totalScore) 
+	{
+		cout << player1.getName() << " wins!\n";
+	}
+	else cout << player2.getName() << " wins!\n";
+
+	getchar();
 
 	//Exits program
 	return 0;

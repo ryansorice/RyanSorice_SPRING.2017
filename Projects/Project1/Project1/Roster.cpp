@@ -7,7 +7,7 @@ using namespace std;
 
 Roster::Roster()
 {
-	_name = "Roster/Line-up:";
+	_name = "Roster/Line-up";
 }
 
 

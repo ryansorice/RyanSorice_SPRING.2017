@@ -21,3 +21,5 @@ std::string Player::getName()
 	return _name;
 }
 
+
+
