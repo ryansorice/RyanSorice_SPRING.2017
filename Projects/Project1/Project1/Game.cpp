@@ -21,25 +21,25 @@ int main() {
 
 	//Variables
 	string name, description;
-	Coach coach = Coach();
-	Roster roster = Roster();
+	auto coach = Coach();
+	auto roster = Roster();
 	Coin coin;
 	
 	cout << "What is your team's name?\n";
 	getline(cin, name);
 	cout << "What is your team's motto?\n";
 	getline(cin, description);
-	Team team = Team(name, description, coach);
+	auto team = Team(name, description, coach);
 
 	cout << team.getTeamInfo() << endl;
 
 	cout << "Enter first player's name.\n";
 	cin >> name;
-	Player player1 = Player(name);
+	auto player1 = Player(name);
 
 	cout << "Enter first player's name.\n";
 	cin >> name;
-	Player player2 = Player(name);
+	auto player2 = Player(name);
 
 	roster.setPlayer(player1, 0);
 	roster.setPlayer(player2, 1);
