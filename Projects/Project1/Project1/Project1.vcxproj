@@ -110,19 +110,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Adc.h" />
     <ClInclude Include="Coin.h" />
+    <ClInclude Include="Jungle.h" />
+    <ClInclude Include="Middle.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Coach.h" />
     <ClInclude Include="Roster.h" />
+    <ClInclude Include="Support.h" />
     <ClInclude Include="Team.h" />
+    <ClInclude Include="Top.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Adc.cpp" />
     <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="Jungle.cpp" />
+    <ClCompile Include="Middle.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Coach.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Roster.cpp" />
+    <ClCompile Include="Support.cpp" />
     <ClCompile Include="Team.cpp" />
+    <ClCompile Include="Top.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
