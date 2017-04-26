@@ -16,3 +16,4 @@ std::string Team::getTeamInfo()
 	info += "Motto: " + _motto + "\n";
 	return info;
 }
+
